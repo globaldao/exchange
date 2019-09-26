@@ -115,14 +115,14 @@
             <p><a class="navy-link" href="#" role="button">Agregar moneda &raquo;</a></p>
         </div>
         <div class="col-sm-3">
-            <h2>6 Charts Library</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
+            <h2>Programa de referidos</h2>
+            <p>Obtén un porcentaje de las comisiones del exchange al invitar gente a utilizar Global DAO Exchange.</p>
+            <p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>
         </div>
         <div class="col-sm-3">
-            <h2>Advanced Forms</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
+            <h2>Sin fines de lucro</h2>
+            <p>El primer exchange que opera sin fines de lucro siendo una empresa de Global DAO y en lineamiento a su constitución.</p>
+            <p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>
         </div>
     </div>
 </section>
@@ -591,44 +591,27 @@
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1>Contact Us</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                <h1>Contáctanos</h1>
+                <p>Ingresa a nuestro servidor en Discord para obtener soporte técnico u obtener información.</p>
             </div>
         </div>
         <div class="row m-b-lg justify-content-center">
-            <div class="col-lg-3 ">
-                <address>
-                    <strong><span class="navy">Company name, Inc.</span></strong><br/>
-                    795 Folsom Ave, Suite 600<br/>
-                    San Francisco, CA 94107<br/>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                </address>
-            </div>
-            <div class="col-lg-4">
-                <p class="text-color">
-                    Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
-                </p>
-            </div>
+            <iframe src="https://discordapp.com/widget?id=436561044656095233&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a href="mailto:test@email.com" class="btn btn-primary">Send us mail</a>
                 <p class="m-t-sm">
-                    Or follow us on social platform
+                    Ó siguenos en plataformas sociales
                 </p>
                 <ul class="list-inline social-icon">
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center m-t-lg m-b-lg">
-                <p><strong>&copy; 2019 Global DAO</strong><br/> consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <p><strong>&copy; 2019 Global DAO</strong><br/> </p>
             </div>
         </div>
     </div>
@@ -699,6 +682,18 @@
     // Activate WOW.js plugin for animation on scrol
     new WOW().init();
 
+</script>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("demo_ajax_json.js", function(result){
+      $.each(result, function(i, field){
+        $("#coins").append(field + " ");
+      });
+    });
+  });
+});
 </script>
 
 </body>
